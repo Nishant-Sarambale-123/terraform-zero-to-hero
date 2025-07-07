@@ -27,11 +27,17 @@ In local backend, each workspace stores its state in .terraform/ directory.
 In remote backend (e.g., S3), the state path changes based on workspace.
 
 Example:
-s3://my-bucket/env:/terraform.tfstate
 
+ruby
+Copy
+Edit
+s3://my-bucket/env:/terraform.tfstate
 🔹 Using Workspaces in Code
 You can reference the current workspace using:
 
+hcl
+Copy
+Edit
 terraform.workspace
 Example:
 
